@@ -44,7 +44,7 @@ import React from 'react';
                         </section>
                     </div>
                 </div>
-                <a href={require('../assets/IbrahimBadmusMERNCVnew.pdf')} download='Resume' id='resume'>Download Resume</a>
+                <a href={require('../assets/Badmus_Ibrahim Abdulfatah_Resume_20-11-2022-20-58-04.pdf')} download='Resume' id='resume'>Download Resume</a>
                </div>
             </section>
         </>
