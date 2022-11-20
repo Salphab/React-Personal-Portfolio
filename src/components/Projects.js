@@ -11,27 +11,27 @@ function Projects(){
                     <div>
                         <img src={require('../img/project-capture.PNG')}/>
                         <h1 id='project-title'>Cloned Ecommerce Site</h1>
-                        <Link to='www.facebook.com' className='sourcelink'>
+                        <a href='https://github.com/Salphab/React-Marketplace-Application' className='sourcelink'>
                             <div>
                                 <i class='bx bxl-github' id='github'></i>
                                 <h5>Link to source code</h5>
                             </div>
-                        </Link>
+                        </a>
                     </div>
                     <div>
                         <img src={require('../img/portfolio.PNG')}/>
                         <h1 id='project-title'>Portfolio Site</h1>
-                        <Link to='www.facebook.com' className='sourcelink'>
+                        <a href='https://github.com/Salphab/React-Personal-Portfolio' className='sourcelink'>
                             <div>
                                 <i class='bx bxl-github' id='github'></i>
                                 <h5>Link to source code</h5>
                             </div>
-                        </Link>
+                        </a>
                     </div>
                     <div>
                         <img src={require('../img/airlineimage.PNG')}/>
                         <h1 id='project-title'>Airline Booking Site</h1>
-                        <Link to='www.facebook.com' className='sourcelink'>
+                        <Link to='https://github.com/Salphab/Airline-Application/tree/master/Airline' className='sourcelink'>
                             <div>
                                 <i class='bx bxl-github' id='github'></i>
                                 <h5>Link to source code</h5>
