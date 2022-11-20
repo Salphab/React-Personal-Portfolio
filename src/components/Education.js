@@ -13,7 +13,7 @@ function Education(){
                             2014-2019
                             </p>
                             <p id='degreetext'>
-                                &#9830;  Bachelor's Degree
+                              Bachelor's Degree
                             </p>
                             <p id='university'>University : Bayero University Kano</p>
                             <p id='university'>Major : Agricultural Economics</p>
@@ -31,14 +31,14 @@ function Education(){
                             2019-2021
                             </p>
                             <p id='degreetext'>
-                            &#9830; Technoworld System Plus
+                             Technoworld System Plus
                             </p>
                             <p id='university'>Web Developer intern</p>
                             <p id='experienceyear'>
                             2019-2021
                             </p>
                             <p id='degreetext'>
-                            &#9830; Freelancing at Upwork and Fiverr
+                             Freelancing at Upwork and Fiverr
                             </p>
                             <p id='university'>Mern Stack Developer</p>
                         </div>
