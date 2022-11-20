@@ -31,7 +31,7 @@ function Contact(){
                     <div id='contactmain'>
                         <div id='contactform'>
                             <form onSubmit={handlesubmit}>
-                                <input type='text' name='clientName' id='clientname' value='Badmus Man' placeholder='Client Name' ref={clientref}/>
+                                <input type='text' name='clientName' id='clientname' placeholder='Client Name' ref={clientref}/>
                                 <input type='text'name='subject' id='subject' placeholder='Subject' ref={subjectref}/>
                                 <input type='email' name='email' id='email' placeholder='Email Address' ref={emailref}/>
                                 <textarea name='message' id='text' placeholder='Message' ref={messageref}/>
