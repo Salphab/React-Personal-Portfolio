@@ -1210,9 +1210,9 @@
     }
     #sidebar{
         position: absolute;
-        display: block;
+        display: none;
         top: 0%;
-        right: -50%;
+        right: 0%;
         width: 100%;
         max-width: 35%;
         height: 400px;
@@ -1389,9 +1389,9 @@
     }
     #sidebar{
         position: absolute;
-        display: block;
+        display: none;
         top: 0%;
-        right: -50%;
+        right: 0%;
         width: 100%;
         max-width: 35%;
         height: 350px;
@@ -1583,14 +1583,14 @@
     }
     #sidebar{
         position: absolute;
-        display: block;
+        display: none;
         top: 0%;
-        right: -50%;
+        right: 0%;
         width: 100%;
         max-width: 35%;
         height: 350px;
         background-color: rgba(0, 0, 0, 0.7);
-        transition: all .5s ease-in;
+        transition: display 5s ease-in-out;
         z-index: 998;
     }
     #sidebar ul{
@@ -1725,13 +1725,16 @@
         top:-4%;
         font-size: 1.4rem;
         color: black;
+
     }
     .bxl-facebook{
-        background-color: #1773ea;
+        color: #1773ea;
+        background-color: white;
         border-radius: 50%;
     }
     .bxl-twitter{
-        background-color:#1c96e9;
+        color:#1c96e9;
+        background-color: white;
         border-radius: 50%;
     }
     .bxl-linkedin-square{
