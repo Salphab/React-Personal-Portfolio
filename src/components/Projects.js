@@ -31,7 +31,7 @@ function Projects(){
                     <div>
                         <img src={require('../img/airlineimage.PNG')}/>
                         <h1 id='project-title'>Airline Booking Site</h1>
-                        <a href='https://github.com/Salphab/Airline-Application/tree/master/Airline' className='sourcelink'>
+                        <a href='https://github.com/Salphab/Airline-Application' className='sourcelink'>
                             <div>
                                 <i class='bx bxl-github' id='github'></i>
                                 <h5>Link to source code</h5>
