@@ -36,13 +36,13 @@ function HeadBar(){
                 <div className='catcontainer'>
                     <button type='button' onClick={(e)=>{
                         e.preventDefault();
-                            if(sidebar.current.style.right === ''){
-                                sidebar.current.style.right = '0%';
+                            if(sidebar.current.style.display === 'none'){
+                                sidebar.current.style.display = 'block';
                             }
-                            else if(sidebar.current.style.right === '0%'){
-                                sidebar.current.style.right = '-50%';
+                            else if(sidebar.current.style.display === 'block'){
+                                sidebar.current.style.display = 'none';
                             }
-                            else sidebar.current.style.right = '0%';
+                            else sidebar.current.style.display = 'none';
                             
                         
                     }}><i class='bx bxs-category-alt'></i></button>
