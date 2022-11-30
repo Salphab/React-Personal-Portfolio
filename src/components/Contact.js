@@ -1,21 +1,35 @@
 import './Contact.css';
-import axios from 'axios';
-import {useRef,useEffect} from 'react';
+import Axios from 'axios';
+import {useState} from 'react';
+import {useNavigate} from 'react-router-dom'
 function Contact(){
-    const clientref = useRef('null');
-    const subjectref = useRef('null');
-    const emailref = useRef('null');
-    const messageref = useRef('null');
-    const handlesubmit = (e)=>{
-        e.preventDefault;
-        axios.post('localhost:4000/mail',
+    const navigate = useNavigate();
+    const [data,Setdata] = useState({
+        email:'',
+        subject:'',
+        message:''
+    })
+    const newDataUpdate = (e)=>{
+        e.preventDefault();
+        const newData = {...data};
+        newData[e.target.id] = e.target.value;
+        Setdata(newData);
+    }
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        Axios.post('http://localhost:5000/api/message',
         {
-                email:emailref.current.value,
-                subject:subjectref.current.value,
-                message:messageref.current.value
-        }).then((res)=>{
-            console.log(res)
-        }).catch((error)=>{
+                email:data.email,
+                subject:data.subject,
+                message:data.message,
+            })
+        .then((res)=>{
+            if(res.status === 200){
+                console.log('message sent successfully');
+                window.location.reload();
+            }
+        })
+        .catch((error)=>{
             console.log(error)
         })
 
@@ -30,11 +44,11 @@ function Contact(){
                 <div id='contact'>
                     <div id='contactmain'>
                         <div id='contactform'>
-                            <form onSubmit={handlesubmit}>
-                                <input type='text' name='clientName' id='clientname' placeholder='Client Name' ref={clientref}/>
-                                <input type='text'name='subject' id='subject' placeholder='Subject' ref={subjectref}/>
-                                <input type='email' name='email' id='email' placeholder='Email Address' ref={emailref}/>
-                                <textarea name='message' id='text' placeholder='Message' ref={messageref}/>
+                            <form onSubmit={handleSubmit}>
+                                <input type='text' name='clientName' id='clientname' onChange={newDataUpdate} placeholder='Client Name'/>
+                                <input type='text'name='subject' id='subject' onChange={newDataUpdate} value={data.subject} placeholder='Subject'/>
+                                <input type='email' name='email' id='email' value={data.email} onChange={newDataUpdate} placeholder='Email Address'/>
+                                <textarea name='message' id='message' onChange={newDataUpdate} value={data.message} placeholder='Message' />
                                 <input type='submit' id='submit' value='Submit Response'/>
                             </form>
                         </div>
